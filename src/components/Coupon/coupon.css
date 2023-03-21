@@ -1,0 +1,53 @@
+.coupon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.coupon-card {
+  width: 400px;
+  padding: 10px;
+  border-radius: 20px;
+  /* background: #355861; */
+  border: none;
+  color: #fff;
+  height: 400px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #36d1dc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #5b86e5,
+    #36d1dc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #5b86e5,
+    #36d1dc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.coupon-code {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  padding-bottom: 1rem;
+  color: whitesmoke;
+}
+
+.image1free {
+  position: absolute;
+  opacity: 0.1;
+  left: 0;
+  top: 0;
+}
+
+.image2free {
+  position: absolute;
+  bottom: 0;
+  right: 9px;
+  opacity: 0.1;
+}

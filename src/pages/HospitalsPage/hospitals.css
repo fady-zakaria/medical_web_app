@@ -1,0 +1,119 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section-container {
+  padding: 0 0 0.1rem 0;
+  overflow: hidden;
+  position: relative;
+  top: 4rem;
+}
+.hosp-title-info {
+  text-align: center;
+  margin-bottom: 5rem;
+  /* margin-top: 4rem;
+  margin-left: 6rem; */
+}
+
+.hosp-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 200;
+  color: #064e68;
+  letter-spacing: 0.5rem;
+  /* margin-bottom: 1.5rem; */
+}
+
+hr {
+  margin: revert;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  height: 1px;
+  background-color: #064e68;
+  margin-top: 1rem;
+  width: 6vw;
+  border: 1px solid #064e68;
+  --tw-drop-shadow: drop-shadow(0 10px 8px rgba(0, 0, 0, 0.04))
+    drop-shadow(0 4px 3px rgba(0, 0, 0, 0.1));
+  opacity: 100;
+}
+
+.hosp-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 1rem;
+  padding: 0 6.2rem;
+  margin-bottom: 5rem;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+}
+
+.hosp-item {
+  /* max-width: 22.75em; */
+  background: white;
+  padding: 1rem;
+  border-radius: 0.5em;
+  overflow: hidden;
+  box-shadow: 0 1.5em 2.5em -0.5em rgba(#000000, 0.1);
+  transition: transform 0.45s ease, background 0.45s ease;
+  width: 100%;
+}
+
+.hosp-item:hover {
+  background-color: #74787933;
+  color: #06a3da;
+  transform: scale(1.02);
+}
+
+.hosp-image-container {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+}
+
+.bi-hospital {
+  fill: #064e68;
+  width: 5rem;
+  height: 8rem;
+}
+
+.hosp-data {
+  padding-top: 0.5rem;
+}
+.hosp-name {
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 16px;
+  color: #064e68;
+}
+
+.hosp-address {
+  margin-bottom: 0;
+  color: #064e68;
+  margin-left: 7rem;
+}
+
+.hosp-tele {
+  margin-bottom: 1rem;
+  color: #064e68;
+  margin-left: 7rem;
+}
+.OrderButton {
+  background-color: #064e68;
+  border-color: #064e68;
+  color: white;
+  /* margin-left: 38%; */
+  margin-top: 1rem;
+}
+
+.order-btn-cont {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}

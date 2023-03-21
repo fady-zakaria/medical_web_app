@@ -1,0 +1,238 @@
+ul {
+  list-style-type: none;
+  margin-left: -4%;
+}
+a {
+  text-decoration: none;
+}
+
+nav {
+  background: hsl(210, 36%, 96%);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  /* position: fixed; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  /* max-height: 70px; */
+}
+.nav-header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.logo-image {
+  /* max-height: 31px; */
+  object-fit: cover;
+  /* padding-right: 0.5rem; */
+  height: 28px;
+}
+
+/*.logo-name {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  /* font-size: 23px; */
+/* font-size: 20px; */
+/* max-width: 5rem; */
+/* line-height: 38px; */
+/* margin-left: 12px; */
+/*color: #06a3da;
+  margin-top: 5px;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+}*/
+.logo-left {
+  display: flex;
+  align-items: center;
+}
+/* .nav-toggle i {
+  color: #06a3da;
+} */
+.nav-toggle {
+  font-size: 1.5rem;
+  color: #06a3da;
+  background: transparent;
+  border-color: transparent;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.nav-toggle:hover {
+  /* color: hsl(205, 86%, 17%); */
+  transform: rotate(90deg);
+}
+.nav-profile {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+
+  align-items: flex-end;
+}
+.links-container {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+.login-container {
+  height: 0;
+  margin: 0px 38%;
+  overflow: hidden;
+  padding: 0;
+  transition: all 0.3s linear;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+}
+.show-container {
+  height: 10rem;
+}
+
+.links {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.links a {
+  color: #5a5e66;
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s linear;
+  /* background-color: transparent; */
+}
+.links a:hover {
+  background: hsl(205, 86%, 86%);
+  color: #06a3da;
+  padding-left: 1.5rem;
+}
+.profile-icon {
+  margin-right: 2rem;
+  /* margin-right: 1.4rem; */
+  /* margin: 0;
+  left: 0;
+  position: relative;
+  right: 0%; */
+  cursor: pointer;
+
+  color: rgb(59, 25, 25);
+}
+
+.icon-circle {
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+.icon-circle:hover {
+  background-color: #e4e6eb;
+}
+
+.login-data {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logout {
+  color: #5a5e66;
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  transition: all 0.3s linear;
+  /* display: inline; */
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+}
+.logout:hover {
+  /* background: hsl(205, 86%, 86%); */
+  color: #06a3da;
+  /* padding-left: 1.5rem; */
+}
+
+@media screen and (min-width: 800px) {
+  nav {
+    max-height: 70px;
+  }
+  .nav-center {
+    /* max-width: 1170px; */
+    max-width: 1386px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+
+    /* padding-top: 0.5rem; */
+  }
+  .nav-header {
+    display: flex;
+
+    flex-direction: row;
+    padding: 0;
+  }
+  .logo-left {
+    display: flex;
+    align-items: center;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links-container {
+    height: auto !important;
+  }
+  .login-container {
+    margin: 0;
+    padding: 0;
+    overflow: inherit;
+    height: auto !important;
+  }
+  .login-data {
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    /* margin-right: -11.6rem;
+    position: relative;
+    left: 60rem; */
+  }
+  /* .login-data li {
+    padding: 0;
+    margin: 0 0.5rem;
+  } */
+  .links {
+    display: flex;
+  }
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+  }
+  .logout:hover {
+    padding: 0;
+    background: transparent;
+  }
+}
+
+/* background-color:#E4E6EB;
+  border-bottom-left-raduis:50%
+  border-bottom-right-raduis:50%
+
+*/

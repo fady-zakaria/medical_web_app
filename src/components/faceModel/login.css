@@ -1,0 +1,107 @@
+/* .ff {
+    justify-content: center;
+    align-items: center;
+    border: thin;
+    border-radius: 20px;
+    border-color: darkblue;
+} */
+
+.login_sigup_container {
+  margin: 5rem 0;
+}
+
+.form-container_login {
+  display: flex;
+  max-width: 100%;
+  position: relative;
+  z-index: 2;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  font-family: "Roboto";
+  /* box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%); */
+  /* background-color: #fff; */
+  border-radius: 8px;
+  border: 1px solid #dadce0;
+  /* border-radius: 10px; */
+  /* margin: 2rem auto; */
+  width: 40%;
+  /* height: 23rem; */
+  min-height: 70vh;
+  flex-shrink: 0;
+  margin: 0px auto;
+}
+
+.form-container_signup {
+  display: flex;
+  max-width: 100%;
+  position: relative;
+  z-index: 2;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  font-family: "Roboto";
+  border-radius: 8px;
+  border: 1px solid #dadce0;
+  width: 73%;
+  min-height: 70vh;
+  flex-shrink: 0;
+  margin: 0px auto;
+  padding: 3rem 1rem 0 1rem;
+}
+.form-details_login {
+  width: 60%;
+}
+.form-details_signup {
+  /* width: 60%; */
+  display: grid;
+  height: 40rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 28px;
+}
+
+.Total_form_signup {
+  width: 60%;
+}
+
+@media (max-width: 990px) {
+  .form-container_login,
+  .form-container_signup {
+    box-sizing: inherit;
+    /* display: block; */
+    border: none;
+    padding: 48px 40px 36px;
+    flex-grow: 1;
+    overflow: hidden;
+    width: inherit;
+    /* min-height: 0; */
+  }
+
+  .form-container_signup {
+    box-sizing: inherit;
+    /* display: block; */
+    border: none;
+    padding: 0px 0px 36px;
+    flex-grow: 1;
+    overflow: hidden;
+    width: inherit;
+    /* min-height: 0; */
+  }
+  .Total_form_signup {
+    width: 80%;
+  }
+}
+
+.login_camera_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: center;
+  margin: auto;
+}

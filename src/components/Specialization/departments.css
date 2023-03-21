@@ -1,0 +1,80 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section-container {
+  padding: 0 0 0.1rem 0;
+  overflow: hidden;
+}
+
+.spec-title-info {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.spec-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  font-weight: 200;
+  margin-bottom: 1.5rem;
+}
+
+.specs-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1rem;
+  padding: 0 4.5rem;
+  margin-bottom: 5rem;
+}
+.doctor-item:hover {
+  background-color: #f9f9f9;
+}
+.specs-item {
+  max-width: 20.75em;
+  /* min-height: 20.75em; */
+  background: white;
+  padding: 1rem;
+  border-radius: 0.5em;
+  overflow: hidden;
+  box-shadow: 0 1.5em 2.5em -0.5em rgba(#000000, 0.1);
+  transition: transform 0.45s ease, background 0.45s ease;
+}
+.specs-item:hover {
+  background-color: #74787933;
+  /* color: white; */
+  color: #06a3da;
+  transform: scale(1.02);
+}
+.specs-image-container {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+}
+.specs-image-container img {
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
+  height: 5rem;
+  width: 33%;
+  /* margin-left: 5rem; */
+}
+.specs-data {
+  padding-top: 0.5rem;
+  text-align: center;
+  /* padding-left: 1.4rem; */
+}
+.specs-name {
+  font-weight: inherit;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.specs-name:hover {
+  /* color: #60a5fa; */
+  color: #06a3da;
+}
+
+/* .doctor-spec {
+  text-transform: uppercase;
+  color: #828282;
+} */

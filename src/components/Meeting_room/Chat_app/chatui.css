@@ -1,0 +1,250 @@
+/* @import url("https://fonts.googleapis.com/css?family=Lato:400,700"); */
+
+.chatui-container {
+  height: 100%;
+  font-family: sans-serif;
+  border-radius: 10px 0 0 0;
+  overflow-y: auto;
+  font-size: 16px;
+  background-color: #05191b;
+  /* background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255); */
+}
+
+div::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+div::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+div::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+}
+
+div::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.chatboxui {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  background-color: #05191b;
+  /* box-shadow: 5px 5px 15px rgba(#777777, 0.5); */
+  height: 100vh;
+}
+
+.topui {
+  height: 100%;
+  overflow-y: auto;
+  background-color: #05191bc7;
+  overflow-x: hidden;
+  /* background-color: rgb(208, 209, 209); */
+  border-radius: 10px 0 0 0;
+  padding-bottom: 15px;
+  /* padding-right: 10px; */
+}
+
+.topbar {
+  width: 100%;
+  height: 34px;
+  background-color: #093235ba;
+  /* background: #f9fbff; */
+
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.messages-container {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 11px;
+  /* background-color: rgba(208, 209, 209, 0.76); */
+}
+
+.message-text {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #1877f2;
+  color: white;
+  /* max-width: 11vw; */
+  max-width: 250px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.msg-avatar-text {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.message-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #124280;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  margin-right: 10px;
+  margin-top: 2px;
+}
+
+.messages-container.own {
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.messages-container.own .message-text {
+  background-color: rgb(245, 241, 241);
+  color: black;
+}
+
+.total-message {
+  display: flex;
+}
+
+.bottomUi {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chatMessageInput {
+  width: 80%;
+  height: 100%;
+  padding: 10px 0 0 10px;
+  border-radius: 0 10px 10px 0;
+  background-color: #113133dc;
+  color: white;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.chatMessageInput::placeholder {
+  color: white;
+  font-family: sans-serif;
+}
+
+.chatSubmitButton {
+  width: 3.6rem;
+  height: 3.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #2d79ddc4;
+  color: white;
+}
+
+.chatSubmitButton:hover {
+  background-color: #2d79dd;
+}
+
+.attachFile {
+  cursor: pointer;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.attachFile:hover {
+  background-color: #0f305c;
+}
+
+/*image enlargement*/
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal_image {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 100px;
+  width: 100%; /* Full width */
+  height: 80%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  max-width: 700px;
+}
+
+/* Add Animation */
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* @media screen and (max-width: 768px) {
+  .chatui-container {
+    font-size: 7px;
+  }
+  .chatSubmitButton {
+    width: 10vw;
+  }
+} */

@@ -1,0 +1,154 @@
+#calender-btn {
+  color: black;
+  border-color: #f8f9fa;
+  /* padding-right: 3rem; */
+  padding: 1rem 0rem;
+  border: none;
+  width: 100%;
+  height: auto;
+}
+
+/* .button_carousel {
+  margin-top: 12rem;
+  width: 1313rem;
+} */
+.bVoXXg {
+  margin-left: 0.2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+#calender-btn:hover {
+  background-color: #cecfcf;
+  border-color: #f8f9fa;
+}
+
+.right-arrow {
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  right: 7px;
+  width: 45px;
+  height: 45px;
+  background: whitesmoke;
+  color: #06a3da;
+  border-radius: 50%;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.right-arrow::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #666;
+  border-right: 2px solid #666;
+  transform: translate(-75%, -50%) rotate(45deg);
+}
+
+.right-arrow:hover::after {
+  border-color: #333;
+}
+
+.left-arrow {
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  left: -11px;
+  width: 45px;
+  height: 45px;
+  background: whitesmoke;
+  color: #06a3da;
+  border-radius: 50%;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.left-arrow::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #666;
+  border-right: 2px solid #666;
+  transform: translate(-25%, -50%) rotate(-135deg);
+}
+
+.left-arrow:hover::after {
+  border-color: #333;
+}
+
+.scrolling {
+  overflow-x: scroll;
+}
+
+/* .slider_buttons_UI {
+  padding: 10px 0;
+  max-width: 500px;
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  background-color: #0a9e88;
+  margin-left: 10px;
+  transition: all 0.1s ease;
+} */
+
+.bqyzQp {
+  width: 67rem;
+}
+
+.Calender_buttons {
+  width: 100%;
+  display: flex;
+  /* padding-left: 2rem; */
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.slider_container_UI {
+  width: 30%;
+  padding: 5px;
+  display: block;
+}
+/*
+.slick-next,
+.slick-prev {
+  width: 2vw;
+  height: 2vw;
+  color: #06a3da;
+  cursor: pointer;
+  border: none;
+  border-radius: 5vw;
+  background-color: whitesmoke;
+  z-index: 99 !important;
+  box-shadow: rgba(35, 35, 35, 0.195) 0px 0px 20px 5px;
+  top: 40%;
+}
+
+.slick-next:hover {
+  background-color: #fff;
+  color: #06a3da;
+}
+.slick-prev:hover {
+  background-color: #fff;
+  color: #06a3da;
+} */
+
+.slots-UI {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}

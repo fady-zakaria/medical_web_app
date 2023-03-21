@@ -1,0 +1,16 @@
+/* .pharmacytile {
+  //text-align: "center";
+  color: "red";
+}
+ */
+
+.or_order {
+  display: inline;
+  margin-bottom: 0;
+  font-family: sans-serif;
+  margin-top: 5px;
+}
+
+.or-container {
+  display: contents;
+}

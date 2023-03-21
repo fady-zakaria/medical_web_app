@@ -1,0 +1,17 @@
+.App {
+  margin: 0;
+}
+.body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 4rem;
+}
+
+.body-without-top {
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}

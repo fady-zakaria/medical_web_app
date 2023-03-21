@@ -1,0 +1,37 @@
+.footer-container {
+  grid-area: footer;
+  padding: 3rem 1rem;
+  line-height: 1rem;
+  background-color: #222;
+  text-align: center;
+  padding-left: 5rem;
+  padding-right: 16rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 650px) {
+  .footer-container {
+    flex-direction: column;
+  }
+}
+
+.footer-p {
+  letter-spacing: 0.2em;
+  color: white;
+  width: max-content;
+  text-align: center;
+}
+
+.complaints_btn {
+  letter-spacing: 2px;
+  background: transparent;
+  color: white;
+}
+
+.complaints_btn:hover {
+  text-decoration: underline;
+}

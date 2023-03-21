@@ -1,0 +1,91 @@
+.chat-btn {
+  /* box-sizing: border-box; */
+  background-color: #1f3646;
+  border: none;
+  border-radius: 25px;
+  bottom: 15px;
+  height: 50px;
+  position: fixed;
+  right: 40px;
+  width: 50px;
+  z-index: 6;
+  /* padding-left: 14px; */
+  transition: transform 0.6s ease-in-out;
+}
+
+.chat-icon {
+  /* box-sizing: border-box; */
+  fill: #fff;
+  height: 34px;
+  width: 25px;
+}
+.chat-btn:hover {
+  transform: scale(1.1);
+  /* transform: rotateY(60deg); */
+}
+
+.chatbot-container {
+  box-sizing: border-box;
+  /* margin: 40px 0; */
+  bottom: 70px;
+  position: fixed;
+  z-index: 6;
+  right: 40px;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+  display: flex;
+  justify-content: center;
+}
+
+.showchatbot-container {
+  /* border: 2px groove; */
+  z-index: 99;
+  border-radius: 12px;
+  height: 32rem;
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 7px 7px 29px 7px;
+}
+.react-chatbot-kit-chat-input {
+  transition: 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  /* border-color: #0f7ef1; */
+  /* transition: 0.5s; */
+  outline-color: #0f7ef1;
+  border-radius: 0 0 0 12px;
+  /* padding-right: 2px; */
+}
+
+.react-chatbot-kit-chat-container {
+  width: 275px;
+}
+
+.react-chatbot-kit-chat-message-container::-webkit-scrollbar {
+  width: 10px;
+}
+.react-chatbot-kit-chat-message-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.react-chatbot-kit-chat-message-container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+}
+.react-chatbot-kit-chat-message-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.react-chatbot-kit-user-chat-message {
+  direction: rtl;
+}
+.react-chatbot-kit-chat-input {
+  direction: rtl;
+}
+.react-chatbot-kit-chat-bot-message {
+  text-align: start;
+  direction: rtl;
+  /* direction: ltr; */
+  /* font-family: Arial, Helvetica, sans-serif; */
+  /* font-family: "Cairo", sans-serif; */
+  /* unicode-bidi: normal; */
+}
